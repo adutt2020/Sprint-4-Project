@@ -8,7 +8,12 @@ I created a profile within Github and created this very repository with a README
 Since we weren't given a specifc task to perofrm analysis on the dataset. I did a first review with the following python methodologies: Vehicles.info(), Vehicles.describe(), Vehicles.duplicated().sum(), Vehicles.sample(), Vehicles.head().
 
 ## Initial Observation
-There are 51525 total lines of data. Parts of the data set that have missing (NaN) data are within the following columns: model_year, cylinders, odometer, paint_color, is_4wd. Due to the lack of context, I can not clean up the data to ensure that all NaN values are replaced with accurate data. The best comparison and most accurate analysis of this data can be done with the following columns: price, model, condition, fuel, transmission, type, date_posted and days_listed. Some analysis that I would like to perform on this given data set is a comparison of how different types of car types compare against each other in prices, and analyze if car type correlates with days_listed. 
+There are 51525 total lines of data. Parts of the data set that have missing (NaN) data are within the following columns: model_year, cylinders, odometer, paint_color, is_4wd. Parts of the data set that have missing (NaN) data are within the following columns: model_year, cylinders, odometer, paint_color, is_4wd. Due to the lack of context, I can not clean up the data to ensure that all NaN values are replaced with accurate data. However, I will replace the Nan values under cylinder and attempt to define the number of cylinders with a high confidence level that if I group the data by model and model's year and then take a median number of cylinders. The best comparison and most accurate analysis of this data can be done with the following columns: price, model, condition, fuel, transmission, type, date_posted and days_listed. Some analysis that I would like to perform on this given data set is a comparison of how different types of car types compare against each other in prices, and analyze if car type correlates with days_listed. 
+
+# Replacing NaN Values in Cylinder Columns
+I used the following code to replace the NaN values in the cylinder column. 
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/689a409a-d6f5-455e-98dc-b480b46c8f01">
+
 
 # Analysis of Car Types and Prices 
 I used the following plotly.express code to create a scatterplot to help me perform the analysis below:
