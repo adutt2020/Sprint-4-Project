@@ -44,23 +44,21 @@ st.markdown("Based on the historgram above, the most expensive vehicles tend to 
 
 
 st.header("Analysis of Fastest and Slowing Selling Cars")
-
- # Creating a Plotly Express histogram
 fig = px.histogram(
-       Vehicles,
-       x='days_listed',
-       color='type',
-       nbins=50,
-       title='Fastest and Slowest Selling Car Types',
-       labels={'days_listed': 'Days Listed', 'type': 'Car Type'}
-   )
+    Vehicles,
+    x='days_listed',
+    color='type',
+    title='Fastest and Slowest Selling Car Types',
+    labels={'days_listed': 'Days Listed', 'type': 'Car Type'},
+    color_discrete_sequence=px.colors.qualitative.Set1  # Use a predefined color sequence
+)
 
-# Show the figure
-fig.show()
+st.plotly_chart(fig)
 
 st.markdown("From this histogram, we can see that buses are the slowest selling cars on this lot. We can also conclude that on average, cars are listed between 20-40 days.")
 
 st.header("Overall Conclusion")
-st.markdown("Trucks and pickups make the most and fastest money for this dealership. If I had to guide this dealership on where to spend it's advertisement money, I would advise to spend it on advertising their buses to increase their lowest revenue and slowest selling products based on the analysis above.", divider=True)
+st.markdown("Trucks and pickups make the most and fastest money for this dealership. If I had to guide this dealership on where to spend it's advertisement money, I would advise to spend it on advertising their buses to increase their lowest revenue and slowest selling products based on the analysis above.")
+
 
 
