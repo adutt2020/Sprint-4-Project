@@ -2,7 +2,9 @@
 TripleTen Sprint 4 Project 
 
 # Initialization
-I created a profile within Github and created this very repository with a README.md file and .gitignore file as a Python template. I made a new python environment and installed the following packages: pandas, streamlit, plotly.express, and altair. I then created an account on render.com and linked it to my GitHub. I then installed VS Code and loaded the project into VS Code using git to clone. Throughout my time working on this project, I was commiting and then pushing back the changes to the GitHub Repository. 
+I created a profile within Github and created this very repository with a README.md file and .gitignore file as a Python template. I made a new python environment and installed the following packages: pandas, streamlit, plotly.express, and altair with the following codes into my terminal:  pip install pandas, pip install streamlit, pip install plotly.express, pip intsall altair. I also imported all those libraries into both .ipynb and app.py files.
+
+I then created an account on render.com and linked it to my GitHub. I then installed VS Code and loaded the project into VS Code using git to clone. Throughout my time working on this project, I was commiting and then pushing back the changes to the GitHub Repository. 
 
 # Inital Review of Data
 Since we weren't given a specifc task to perofrm analysis on the dataset. I did a first review with the following python methodologies: Vehicles.info(), Vehicles.describe(), Vehicles.duplicated().sum(), Vehicles.sample(), Vehicles.head().
