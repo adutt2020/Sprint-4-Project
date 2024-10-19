@@ -1,4 +1,4 @@
-# Sprint-4-Project by Ashley Dutt
+## Sprint-4-Project by Ashley Dutt
 TripleTen Sprint 4 Project 
 
 # Initialization
@@ -7,7 +7,7 @@ I created a profile within Github and created this very repository with a README
 # Inital Review of Data
 Since we weren't given a specifc task to perofrm analysis on the dataset. I did a first review with the following python methodologies: Vehicles.info(), Vehicles.describe(), Vehicles.duplicated().sum(), Vehicles.sample(), Vehicles.head().
 
-# Initial Observation
+## Initial Observation
 There are 51525 total lines of data. Parts of the data set that have missing (NaN) data are within the following columns: model_year, cylinders, odometer, paint_color, is_4wd. Due to the lack of context, I can not clean up the data to ensure that all NaN values are replaced with accurate data. The best comparison and most accurate analysis of this data can be done with the following columns: price, model, condition, fuel, transmission, type, date_posted and days_listed. Some analysis that I would like to perform on this given data set is a comparison of how different types of car types compare against each other in prices, and analyze if car type correlates with days_listed. 
 
 # Analysis of Car Types and Prices 
@@ -22,7 +22,7 @@ I used the following plotly.express code to create a histogram to help me perfor
 
 From this histogram, we can see that buses are the slowest selling cars on this lot. We can also conclude that on average, cars are listed between 20-40 days. 
 
-## Overall Conclusion
+# Overall Conclusion
 Trucks and pickups make the most and fastest money for this dealership. If I had to guide this dealership on where to spend it's advertisement money, I would advise to spend it on advertising their buses to increase their lowest revenue and slowest selling products based on the analysis above. 
 
 ## Project Wrap-up
