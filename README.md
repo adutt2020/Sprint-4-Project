@@ -26,4 +26,4 @@ From this histogram, we can see that buses are the slowest selling cars on this 
 Trucks and pickups make the most and fastest money for this dealership. If I had to guide this dealership on where to spend it's advertisement money, I would advise to spend it on advertising their buses to increase their lowest revenue and slowest selling products based on the analysis above. 
 
 ## Project Wrap-up
-After finishing up the code, I translated all my pthyon code housed in the .ipynb file into the app.py for streamlit. After I created the app.py, I used "streamlit run app.py" to view my web app on the https;//localhost:8501 page and saw that my code was indeed protraying my analysis how I intended it to. 
+After finishing up the code, I translated all my pthyon code housed in the .ipynb file into the app.py for streamlit. After I created the app.py, I used "streamlit run app.py" to view my web app on the https;//localhost:8501 page and saw that my code was indeed protraying my analysis how I intended it to. I then went to Render to officially deploy the web service page. My web app can be viewed here: https://sprint-4-project-1-qwji.onrender.com .
