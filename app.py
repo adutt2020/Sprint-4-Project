@@ -46,15 +46,14 @@ st.header("Analysis of Fastest and Slowing Selling Cars")
 show_histogram = st.checkbox('Show Histogram')
 
 if show_histogram:
-    fig = px.histogram(
-        Vehicles,
-        x='days_listed',
-        color='type',
-        title='Fastest and Slowest Selling Car Types',
-        labels={'days_listed': 'Days Listed', 'type': 'Car Type'},
-        color_discrete_sequence=px.colors.qualitative.Set1
-    )
-    st.plotly_chart(fig)
+    fig = px.histogram(Vehicles,
+                       x='days_listed',
+                       color='type',
+                       title='Fastest and Slowest Selling Car Types',
+                       labels={'days_listed': 'Days Listed', 'type': 'Car Type'},
+                       color_discrete_sequence=px.colors.qualitative.Set1)
+
+st.plotly_chart(fig)
 
 st.markdown("From this histogram, we can see that buses are the slowest selling cars on this lot. We can also conclude that on average, cars are listed between 20-40 days.")
 
