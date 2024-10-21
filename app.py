@@ -40,7 +40,7 @@ st.title('Car Price Analysis')
 st.plotly_chart(fig)
 
 st.header("Analysis Conclusion")
-st.markdown("Based on the historgram above, the most expensive vehicles tend to be convertibles or trucks. Hatchbacks, buses, and 'other' types of cars are the cheapest. This histogram also shows that convertibles, trucks, and coupes have the highest volume of sales. Hatchbacks have the lowest sales.We can say that convertibles are this dealership's most popular and highest revenue generating commodity while hatchbacks are it's lowest.")
+st.markdown("Based on the histogram above, the most expensive vehicles tend to be convertibles or trucks. Hatchbacks, buses, and 'other' types of cars are the cheapest. This histogram also shows that convertibles, trucks, and coupes have the highest volume of sales. Hatchbacks have the lowest sales.We can say that convertibles are this dealership's most popular and highest revenue generating commodity while hatchbacks are it's lowest.")
 
 
 st.header("Analysis of Fastest and Slowing Selling Cars")
@@ -54,9 +54,10 @@ if show_histogram:
         color='type',
         title='Fastest and Slowest Selling Car Types',
         labels={'days_listed': 'Days Listed', 'type': 'Car Type'},
-        color_discrete_sequence=px.colors.qualitative.Set1  # Use a predefined color sequence
-    )
-    st.plotly_chart(fig)
+        color_discrete_sequence=px.colors.qualitative.Set1)  
+           # Use a predefined color sequence
+
+st.plotly_chart(fig)
 
 st.markdown("From this histogram, we can see that buses are the slowest selling cars on this lot. We can also conclude that on average, cars are listed between 20-40 days.")
 
