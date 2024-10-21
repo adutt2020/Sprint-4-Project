@@ -17,8 +17,6 @@ st.markdown("In this project I will first review the data given from a .csv that
 
 st.header("Initial Observation of Data")
 
-st.header('Data Viewer')
-st.dataframe(Vehicles)
 st.markdown("There are 51525 total lines of data.")
 st.markdown("Parts of the data set that have missing (NaN) data are within the following columns: model_year, cylinders, odometer, paint_color, is_4wd. Parts of the data set that have missing (NaN) data are within the following columns: model_year, cylinders, odometer, paint_color, is_4wd. Due to the lack of context, I can not clean up the data to ensure that all NaN values are replaced with accurate data. However, I will replace the Nan values under cylinder and attempt to define the number of cylinders with a high confidence level that if I group the data by model and model's year and then take a median number of cylinders.")
 st.markdown("The best comparison and most accurate analysis of this data can be done with the following columns: price, model, condition, fuel, transmission, type, date_posted and days_listed.")
